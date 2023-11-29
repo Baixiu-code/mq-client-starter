@@ -23,6 +23,9 @@ public class CommonMessage {
      */
     private String text;
 
+    /**
+     * msg byte stream
+     */
     private byte[] body;
 
     /**
