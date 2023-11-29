@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.jd.rc.core.multi.cloud.mq.impl.jmq.config.JmqAutoConfiguration,\
+  com.jd.rc.core.multi.cloud.mq.impl.rocket.config.RocketMqAutoConfiguration
