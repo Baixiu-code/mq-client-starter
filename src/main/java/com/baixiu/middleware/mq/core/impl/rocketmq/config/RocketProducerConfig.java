@@ -9,6 +9,8 @@ public class RocketProducerConfig {
 
     private String name;
 
+    public RocketProducerConfig(){}
+
     public String getName() {
         return name;
     }

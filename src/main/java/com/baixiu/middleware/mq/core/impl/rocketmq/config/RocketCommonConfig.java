@@ -4,10 +4,10 @@ import java.util.List;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * @author chenfanglin1
+ * @author baixiu
  * @date 创建时间 2023/11/29 4:19 PM
  */
-@ConfigurationProperties(prefix = "saas-mq.rocketmq")
+@ConfigurationProperties(prefix = "common-mq.rocketmq")
 public class RocketCommonConfig {
 
     private RocketClientConfiguration transport;

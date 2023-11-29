@@ -3,7 +3,7 @@ package com.baixiu.middleware.mq.model;
 /**
  * 通用msg bean。用以抹平不同平台的message bean.
  * 仅设置通用字段
- * @author chenfanglin1
+ * @author baixiu
  * @date 创建时间 2023/11/29 2:43 PM
  */
 public class CommonMessage {
@@ -43,34 +43,15 @@ public class CommonMessage {
     public CommonMessage() {
     }
 
-    public static CommonMessage createMessage(String text) {
-        CommonMessage saasMessage = new CommonMessage();
-        saasMessage.setText(text);
-        return saasMessage;
-    }
 
-    public static CommonMessage createMessage(String businessId, String text) {
-        CommonMessage saasMessage = new CommonMessage();
-        saasMessage.setBusinessId(businessId);
-        saasMessage.setText(text);
-        return saasMessage;
-    }
-
-    public static CommonMessage createMessage(String topic, String businessId, String text) {
-        CommonMessage saasMessage = new CommonMessage();
-        saasMessage.setBusinessId(businessId);
-        saasMessage.setText(text);
-        saasMessage.setTopic(topic);
-        return saasMessage;
-    }
 
     public static CommonMessage createMessage(String topic, String businessId, String text, byte[] body) {
-        CommonMessage saasMessage = new CommonMessage();
-        saasMessage.setBusinessId(businessId);
-        saasMessage.setText(text);
-        saasMessage.setTopic(topic);
-        saasMessage.setBody(body);
-        return saasMessage;
+        CommonMessage commonMessage = new CommonMessage();
+        commonMessage.setBusinessId(businessId);
+        commonMessage.setText(text);
+        commonMessage.setTopic(topic);
+        commonMessage.setBody(body);
+        return commonMessage;
     }
 
 
